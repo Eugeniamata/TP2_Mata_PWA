@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/**	Header */
+header {
+    padding: 1em;
+    background-color: #E4C5AF;
+    color: grey;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+h1{
+    color: grey;
+     text-decoration:none;
+    font-size:1.5em;
+    margin:0.75rem;
+}
+
+h2{
+	font-size:1.5em;
+	margin:0.75rem;
+}
+
+h3{
+	font-size: 1em;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #A1B79C;
+	border-color: #A1B79C;
+  
+}
+
+
+
+
+
+
+
+/* Tuneamos la barra de navegación pisando las clases del framework. */
+
+.navbar {
+    padding: 0;
+    background: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    background: none;
+    flex-wrap: nowrap;
+}
+
+/* Repartimos el ancho de los botones en partes iguales. */
+
+.nav-item {
+    flex: 1;
+    padding: 0;
+}
+
+.nav-link {
+    background-color: none;
+    text-align: center;
+}
+
+/* Le damos un tamaño a las img de los botones y les aplicamos transparencia para poner como activa solo la vista actualmente en foco de navegación con opacidad 1. */
+
+img[src*=".svg"] {
+    height: 1.25em;
+    opacity: .5;
+}
+
+/* Inicialmente, ponemos como activa la img del primer botón (la sección uno) con opacidad 1. */
+
+nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+/* Con cualquier page en target (los containers que tienen aplicado el attr data-role page que corresponden a cada vista de la app), pasamos a todas las img a opacidad .5 (para desmarcar la que estuviera activa ya que no sabemos cuál era). Por eso ubicamos el nav por debajo de todo el resto para poder seleccionarlo con el operador de hermanos (~). */
+
+[data-role="page"]:target ~ nav .nav-item img[src*=".svg"] {
+    opacity: .5;
+}
+
+/* Y luego evaluamos qué page está en target para marcar la img del botón correspondiente como activa con opacidad 1. */
+
+#uno:target ~ nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#dos:target ~ nav .nav-item:nth-of-type(2) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#tres:target ~ nav .nav-item:nth-of-type(3) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#cuatro:target ~ nav .nav-item:nth-of-type(4) img[src*=".svg"] {
+    opacity: 1;
+}
+
+/* Seleccionamos a todas las vistas (containers con attr data-role page) por atributo/valor y las ocultamos con display none. Además les damos posicionamiento absoluto y las ubicamos en el vértice superior izquierdo de la ventana del browser y les aplicamos un margen inferior del tamaño del nav ubicado en la parte inferior de la ventana con posición fija para que no queden tapadas en su contenido. */
+
+[data-role="page"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 2.5rem;
+}
+
+/* Pero la vista uno le aplicamos display block para que se vea inicialmente. */
+
+#uno {
+    display: block;
+}
+
+/* Como la navegación es por target (o vínculo ancla) la vista en target se hace visible. */
+
+[data-role="page"]:target {
+    display: block;
+}
+
+/* Como se dijo, cuando carga el html la page uno aparece activa (display block) ya que debemos mostrar algo de contenido, luego, con cualquier otra page en target ocultamos la uno para que no quede por debajo de la vista en target (las demás están display none desde el comienzo). Del mismo modo que para el nav, ubicamos la vista uno por debajo de las demás para poder seleccionarla con el operador de hermanos (~). */
+
+#dos:target ~ #uno,
+#tres:target ~ #uno,
+#cuatro:target ~ #uno,
+#cinco:target ~ #uno,
+#seis:target ~ #uno,
+#siete:target ~ #uno,
+#ocho:target ~ #uno,
+#nueve:target ~ #uno {
+    display: none;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+/* Ubicamos a la derecha el botón que abre el modal. */
+
+.btn_header {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+/* Le damos un tamaño a los cards de la table-responsive para que scrolleen en el eje horizontal de manera interna en la tabla. */
+
+.card_table {
+    width: 40vw;
+}
+
+
+.ajuste {
+    margin: 60px;
+}
