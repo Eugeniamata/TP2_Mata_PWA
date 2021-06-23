@@ -1,7 +1,7 @@
 {
-  "name": "DINOR PWA",
-  "short_name": "Dinor",
-  "description": "Es una PWA de materiales para la construcción",
+  "name": "MUSIC PWA",
+  "short_name": "Music",
+  "description": "Es una PWA con la tendencia de la música",
   "icons": [
     {
       "src": "img/dinor-icon48.png",
