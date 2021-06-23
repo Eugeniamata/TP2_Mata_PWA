@@ -20,12 +20,3 @@ window.addEventListener('online', event => {
   openSoccerApi();
 });
 
-// A veces este evento falla, ojo!
-// Sirve para saber si el navegador esta offline, cuando entramos offline. 
-// Es decir, no se disparo los eventos de arriba aun, y necesito conocer el estado.
-// 
-
-if (!navigator.onLine) {
-  document.querySelector('body').classList.add('offline');
-  main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
-}
