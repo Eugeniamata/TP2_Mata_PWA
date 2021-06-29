@@ -4,24 +4,17 @@ const URL = 'https://www.theaudiodb.com/api_guide.php';
 const button = document.getElementById("sendButton");
 const main = document.getElementById("main");
 const inputElement = document.getElementById("search");
-const img = document.getElementById("img");
-const h3 = document.getElementById("h3");
+
 
 
 button.addEventListener("click", ()=>{
   searchArtist(inputElement.value);
 });
 
-//theaudiodb.com/api/v1/json/{APIKEY}/track-top10.php?s=(artistname}
-//theaudiodb.com/api/v1/json/{APIKEY}/artist.php?i=112024
-//theaudiodb.com/api/v1/json/1/search.php?s=${wordToSearch}
-//theaudiodb.com/api/v1/json/1/discography.php?s=${wordToSearch}`
-
 
 function searchArtist(wordToSearch){
   console.log('Palabra', wordToSearch);
- 
- // theaudiodb.com/api/v1/json/{APIKEY}/discography.php?s=coldplay
+
 
   const fetchPromise = fetch(`https://theaudiodb.com/api/v1/json/1/search.php?s=${wordToSearch}`);
 

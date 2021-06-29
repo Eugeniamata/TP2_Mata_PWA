@@ -83,13 +83,7 @@ figure {
 	text-align: center;
 }
 		
-#ayudar {
-	display:flex;
-	align-items: stretch;
-	justify-content: center;
-	flex-wrap: wrap;
-	
-}
+
 
 #uno {
     order: 0;
