@@ -29,8 +29,7 @@ h1 {
 
 h2, h3{
     text-align:center;
-	font-family: 'Ubuntu';
-	margin:1em;
+	margin: 1em;
 }
 
 h3{
@@ -42,7 +41,7 @@ nav ul li {
     width: 90%;
     margin: .8em 0;
     display: inline-block;
-	font-family: 'Ubuntu';
+
 }
 
 nav ul li a {
@@ -120,84 +119,6 @@ figure {
 }
 
 
-/* Formulario */
-form {
-	
-	flex-direction:column;
-	background: url("img/plantitascel.jpg") right no-repeat;
-    width: 95%;
-    padding: 1em;
-    margin: 1em auto;
-	font-family:'Ubuntu';	
-}
-
-label {
-    display: inline-block;
-    vertical-align: middle;
-    width: 4em;
-}
-
-div {
-	width: 80%;
-    margin: 1em auto;
-}
-
-div:first-child > label{
-    vertical-align: top;
-}
-
-input {
-	
-	outline: none;
-	box-shadow: none;
-	width: 52%;
-	padding: 0.5em;
-}
-input[type="radio"] {
-    width: auto;
-    margin-right: 5px;
-}
-       
-input[type="radio"] + label {
-    width: auto;
-}
-       
-input[name="nombre"]{
-    border: none;	
-}
-input[type="email"]{
-    border: none;	
-}
-
-input:invalid {
-    background: grey;
-    color: white;
-}
-
-input:valid {
-    background: #99c8c5;
-}
-
-input:focus:invalid {
-    background: tomato;
-}
-
-textarea {
-	background:#99c8c5;
-	color:black ;
-    resize: none;
-    width: 52%;
-    vertical-align: top;
-	outline: none;
-    padding: 5px;
-	border: none;
-}
-
-input[type="submit"]{
-    width: 50%;
-	background-color:#bac4e4;
-}
-
 
 /*FOOTER*/
 
@@ -226,34 +147,6 @@ footer p {
 	font-size:1.5em;
 	text-align:center;
 }
-
-
-/*VIDEO*/
-
-#video {
-    width: 90%;
-    font-size: 0;
-    background:#9ac9c7;
-	margin:auto;
-}
-
-#cuatro {
-    width: 90vw;
-    height: calc(90vw * 315 / 560);
-    max-width: 560px;
-    max-height: 315px;
-    background: grey;
-    margin: auto;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-
-
 
 
 
@@ -300,23 +193,6 @@ nav ul li {
 	padding:0.5em;
 }
 
-
-figure {		
-    width: 90%;
-    margin: auto;
-}
-		
-input[type="submit"]{
-    width: 30%;
-	background-color:#bac4e4;
-}
-		
-form {
-	background: url("img/plantitastab.jpg") right no-repeat;
-    width: 85%;
-    padding: 2em;
-    margin: 2em auto;	
-}	
 	
 }
 /* Reglas para PC. */
@@ -330,7 +206,7 @@ section {
 }
 
 h1 {
-	background: url("img/dinor.jpg") center center no-repeat;
+	
 	font-size:0;
 	width: 298px;
     height: 101px;
@@ -359,22 +235,5 @@ p {
 	font-size:1em;
 }
 	
-figure {
-     width: 100%;
-}
-
-form {
-	background: url("img/plantitas.jpg") right no-repeat;
-    width: 80%;
-    padding: 2em;
-    margin: 2em auto;	
-}	
-	
-
-input[type="submit"]{
-    width: 20%;
-	background-color:#bac4e4;
-}
-
 
 }
