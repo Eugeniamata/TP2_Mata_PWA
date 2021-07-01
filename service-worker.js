@@ -1,4 +1,3 @@
-
 const cacheName = 'cache-version-1';
 
 const precache = [
