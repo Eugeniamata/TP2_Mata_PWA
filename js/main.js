@@ -1,4 +1,3 @@
-const API_KEY = '54f1c127920de15bda65f23b007b9ea3'; 
 const URL = 'https://www.theaudiodb.com/api_guide.php';
 
 const button = document.getElementById("sendButton");
@@ -39,12 +38,11 @@ function searchArtist(wordToSearch){
 function madeGrid(data){
   const artist = data.artists[0].strArtist ;
   
-  const bio = data.artists[0].strBiographyES ;
+const bio = data.artists[0].strBiographyES ;
 const genero = data.artists[0].strGenre ;
 const fb = data.artists[0].strFacebook ;
 const tw = data.artists[0].strTwitter ;
 const web = data.artists[0].strWebsite ;
-
 const banner = data.artists[0].strArtistFanart ;
 
   main.innerHTML = `<ul><li><p>Artista: ${artist} </p></li>
