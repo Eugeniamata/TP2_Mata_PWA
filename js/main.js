@@ -1,4 +1,4 @@
-const API_KEY = '54f1c127920de15bda65f23b007b9ea3'; 
+
 const URL = 'https://www.theaudiodb.com/api_guide.php';
 
 const button = document.getElementById("sendButton");
