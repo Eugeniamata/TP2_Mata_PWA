@@ -16,6 +16,6 @@ window.addEventListener('offline', event => {
 
 window.addEventListener('online', event => {
   document.querySelector('body').classList.remove('offline');
-  openSoccerApi();
+ 
 });
 
