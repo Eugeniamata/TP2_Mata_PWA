@@ -1,4 +1,3 @@
-
 const URL = 'https://www.theaudiodb.com/api_guide.php';
 
 const button = document.getElementById("sendButton");
